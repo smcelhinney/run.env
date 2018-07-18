@@ -36,6 +36,7 @@
   "scripts": {
     "lint": "eslint src/**",
     "build": "babel --presets es2015 src -d lib",
+    "postinstall": "npm run build",
     "prepublish": "rm -fr lib/ && npm run build",
     "dev": "./node_modules/.bin/babel-node src/",
     "start": "node lib/"
