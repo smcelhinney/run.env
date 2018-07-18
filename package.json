@@ -1,5 +1,5 @@
 {
-  "name": "run.env",
+  "name": "@hs-web-team/run.env",
   "version": "1.0.2",
   "description": "Execute commands with .env file",
   "keywords": [
@@ -36,7 +36,6 @@
   "scripts": {
     "lint": "eslint src/**",
     "build": "babel --presets es2015 src -d lib",
-    "postinstall": "npm run build",
     "prepublish": "rm -fr lib/ && npm run build",
     "dev": "./node_modules/.bin/babel-node src/",
     "start": "node lib/"
